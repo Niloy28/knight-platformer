@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://c3142s0onj380"]
+[gd_scene load_steps=14 format=3 uid="uid://c3142s0onj380"]
 
 [ext_resource type="PackedScene" uid="uid://2r2xv3ipaww6" path="res://scenes/player.tscn" id="1_2yrb2"]
 [ext_resource type="Texture2D" uid="uid://bn8ymr1ryavnt" path="res://assets/sprites/world_tileset.png" id="2_l43sx"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://chy2kjfsp01de" path="res://scenes/coin.tscn" id="4_djw1o"]
 [ext_resource type="PackedScene" uid="uid://dfbiikvieufih" path="res://scenes/killzone.tscn" id="5_cwf7b"]
 [ext_resource type="PackedScene" uid="uid://cgt4kjet4sgde" path="res://scenes/green_slime.tscn" id="6_2cd48"]
+[ext_resource type="FontFile" uid="uid://bk548iigh346i" path="res://assets/fonts/PixelOperator8.ttf" id="7_r822j"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rvpti"]
 texture = ExtResource("2_l43sx")
@@ -498,3 +499,41 @@ position = Vector2(107, -51)
 
 [node name="Green Slime" parent="." instance=ExtResource("6_2cd48")]
 position = Vector2(169, 6)
+
+[node name="Labels" type="Node" parent="."]
+
+[node name="Label" type="Label" parent="Labels"]
+offset_left = -129.0
+offset_top = 2.0
+offset_right = -54.0
+offset_bottom = 18.0
+theme_override_colors/font_color = Color(0.0937854, 0.0924074, 0.403743, 1)
+theme_override_fonts/font = ExtResource("7_r822j")
+theme_override_font_sizes/font_size = 8
+text = "Don't fall!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="Labels"]
+offset_left = -44.0
+offset_top = -62.0
+offset_right = 47.0
+offset_bottom = -46.0
+theme_override_colors/font_color = Color(0.0937854, 0.0924074, 0.403743, 1)
+theme_override_fonts/font = ExtResource("7_r822j")
+theme_override_font_sizes/font_size = 8
+text = "Space to Jump!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="Labels"]
+offset_left = 166.0
+offset_top = -32.0
+offset_right = 297.0
+offset_bottom = -16.0
+theme_override_colors/font_color = Color(0.0937854, 0.0924074, 0.403743, 1)
+theme_override_fonts/font = ExtResource("7_r822j")
+theme_override_font_sizes/font_size = 8
+text = "Beware of the enemy!"
+horizontal_alignment = 1
+vertical_alignment = 1
